@@ -1,0 +1,11 @@
+<h1>Editing Post</h1>
+
+<%= render 'form', post: @post, member_name: :edit_cleanup %>
+
+<%= link_to 'Show', @post %> |
+<%= link_to 'Back', url_for(:posts) %>
+
+<script>
+  TurbolinksUtil.cleanup();
+  $("#post_category_id").select2();
+</script>
