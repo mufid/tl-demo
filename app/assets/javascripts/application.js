@@ -18,3 +18,5 @@
 //= require leaflet
 //
 //= require cleanup
+//
+//= require updater

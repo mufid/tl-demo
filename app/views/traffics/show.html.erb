@@ -1,0 +1,8 @@
+<h2>Live Traffic</h2>
+<%= link_to 'Back to blurggghhh post', url_for([:posts]) %>
+
+<script>
+  var trafficPath = "<%= escape_javascript(url_for([:retrieve_latest, :traffic])) %>";
+  var updater = new LiveUpdater(trafficPath);
+  updater.attach();
+</script>
